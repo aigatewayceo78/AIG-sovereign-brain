@@ -1,0 +1,20 @@
+from core.oracle import get_market_data
+from core.mind import synthesize_strategy
+from core.commander import display_directive
+from governance.habits_sys import apply_executive_governance
+
+def run_sovereign_cycle():
+    # 1. Sense (Oracle)
+    market_data = get_market_data()
+    
+    # 2. Think (Mind)
+    thought = synthesize_strategy(market_data)
+    
+    # 3. Govern (Habits.Sys)
+    executive_directive = apply_executive_governance(thought)
+    
+    # 4. Command (Commander)
+    display_directive(executive_directive)
+
+if __name__ == "__main__":
+    run_sovereign_cycle()
