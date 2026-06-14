@@ -1,0 +1,10 @@
+/aig-sovereign-brain
+├── /core
+│   ├── mind.py            // Asset 01: Inference Engine
+│   ├── oracle.py          // Asset 073: Market Data Ingest
+│   └── commander.py       // Asset 16: UI/Reporting logic
+├── /governance
+│   └── habits_sys.py      // IP-05: The "Filter" Logic
+├── .github/workflows
+│   └── sovereign_cycle.yml // The "Heartbeat" of the AI
+└── config.json            // Ecosystem constants
